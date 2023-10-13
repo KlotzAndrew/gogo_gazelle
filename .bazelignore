@@ -1,0 +1,8 @@
+node_modules
+libs/dogs/node_modules
+app/.next
+bazel-out
+bazel-bin
+bazel-nextjs
+bazel-testlogs
+dist

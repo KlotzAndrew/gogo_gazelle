@@ -6,3 +6,11 @@ run: build
 
 test:
 	pnpm run test
+
+delete-build-files:
+	find . -type f -name 'BUILD.bazel' \
+		! -path "./BUILD.bazel" \
+		-delete
+
+bazel-gen: delete-build-files
+	bazelisk configure
