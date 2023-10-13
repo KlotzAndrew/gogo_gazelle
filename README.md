@@ -2,12 +2,29 @@
 
 A toy app for getting started with gazelle
 
-## Setup Bazel with Gazelle
+## Install & Setup
+
+```bash
+nvm use
+npm install -g pnpm
+pnpm install
+
+# validate everything works
+make test
+make run
+```
+
+The program outputs this string on success:
+> app,dogs,great,are,dogs,food,utilmsg,great,are,pets
+
+## Using Gazelle and Bazel
 
 This currently does not work
 
 ### Generate build files:
 ```bash
+bazelisk configure
+# or
 make bazel-gen
 ```
 
@@ -72,25 +89,3 @@ Loading: 8 packages loaded
 Error: bazel exited with exit code: 7
 
 </details>
-
-## Validation (without bazel)
-
-Run these commands to verify everything works
-
-### tests
-```bash
-$ make test
-
-Test Suites: 2 passed, 2 total
-```
-
-### run
-```bash
-$ make run
-
-app,dogs,great,are,dogs,food,utilmsg,great,are,pets
-```
-
-## Validation (with bazel)
-
-TBD

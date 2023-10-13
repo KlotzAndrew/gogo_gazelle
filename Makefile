@@ -1,3 +1,8 @@
+setup:
+	nvm use
+	npm install -g pnpm
+	pnpm install
+
 build:
 	pnpm run build
 
