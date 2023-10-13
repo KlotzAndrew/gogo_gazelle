@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/utils/*": ["./src/utils/*"],
+      "@libs/*": ["./node_modules/@libs/*"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "composite": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "bazel-*"],
+  "files": [],
+  "references": [
+    {
+      "path": "./libs/dogs"
+    }
+  ]
+}
